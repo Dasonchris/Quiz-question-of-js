@@ -130,11 +130,11 @@ submitBtn.addEventListener("click", () =>{
         score++;
     }
 
-    // if(answer === quizData[currentQuiz].correct){
-    //     alert("correct answer");
-    // }else{
-    //     alert("wrong answer")
-    // }
+    if(answer === quizData[currentQuiz].correct){
+        alert("correct answer");
+    }else{
+        alert("wrong answer")
+    }
     currentQuiz++;
     if(currentQuiz < quizData.length){
         loadQuiz()
